@@ -5,6 +5,17 @@ console.log('Server URL:', serverUrl);
 
 const chatbox = document.getElementById('chatbox');
 const userInput = document.getElementById('user-input');
+const emojiImage = document.getElementById('emoji-image');
+
+userInput.addEventListener('input', function() {
+    // 사용자가 입력할 때 이미지를 GIF로 변경
+    emojiImage.src = 'character-image.gif';  // GIF 파일의 경로로 변경
+});
+
+userInput.addEventListener('blur', function() {
+    // 사용자가 입력을 끝내고 입력 필드가 포커스를 잃었을 때 PNG로 변경
+    emojiImage.src = 'character-image.png';  // PNG 파일의 경로로 변경
+});
 const sendButton = document.getElementById('send-button');
 const clearHistoryButton = document.getElementById('clear-history');
 
