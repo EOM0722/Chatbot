@@ -1,6 +1,6 @@
 console.log('Script is running');
 
-const serverUrl = 'http://127.0.0.1:5012';
+const serverUrl = 'https://947d-106-249-0-85.ngrok-free.app';
 console.log('Server URL:', serverUrl);
 
 const chatbox = document.getElementById('chatbox');
