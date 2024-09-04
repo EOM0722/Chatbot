@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>통생명책 저자AI와의 Book Concert</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>통생명책 저자AI와의 Book Concert</h1>
         <div id="chat-area">
+            <div id="chalkboard">
+                <div id="chatbox"></div>
+            </div>
             <div id="character">
                 <img id="emoji-image" src="character-image.png" alt="AI 캐릭터">
             </div>
-            <div id="bubble">
-                <img src="bubble.png" alt="말풍선">
-                <div id="chatbox"></div>
+        </div>
+        <div id="input-container">
+            <div id="input-area">
+                <input type="text" id="user-input" placeholder="메시지를 입력하세요...">
+                <button id="send-button">보내기</button>
             </div>
+            <button id="clear-history">대화 내용 지우기</button>
         </div>
     </div>
-    <div id="input-container">
-        <div id="input-area">
-            <input type="text" id="user-input" placeholder="메시지를 입력하세요...">
-            <button id="send-button">전송</button>
-        </div>
-        <button id="clear-history">대화 내역 초기화</button>
-    </div>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
