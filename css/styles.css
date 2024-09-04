@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: white; /* 이 줄을 추가하거나 수정 /
+    background-color: white;
 }
 h1 {
     text-align: center;
