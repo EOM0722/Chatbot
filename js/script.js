@@ -32,12 +32,13 @@ function addMessageToUI(role, message) {
 }
 
 function setCharacterImage(isAnimated) {
-    characterImage.src = isAnimated ? 'character-image.gif' : 'static-character.png';
+    characterImage.src = isAnimated ? 'character-image.gif' : 'character-image.png';
 }
 
 async function sendMessage() {
     const message = userInput.value.trim();
     if (message) {
+        setCharacterImage(true);
         addMessageToUI('user', message);
         saveChatHistory('user', message);
         userInput.value = '';
@@ -65,7 +66,8 @@ async function sendMessage() {
         } catch (error) {
             addMessageToUI('assistant', `Error: ${error.message}`);
         } finally {
-            userInput.focus(); // 입력 후 커서를 다시 입력창으로 이동
+            setCharacterImage(false);
+            userInput.focus();
         }
     }
 }
