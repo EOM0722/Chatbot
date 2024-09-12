@@ -1,4 +1,4 @@
-const serverUrl = 'https://63bb-106-249-0-85.ngrok-free.app';
+const serverUrl = 'https://8d00-106-249-0-85.ngrok-free.app';
 const chatbox = document.getElementById('chatbox');
 const userInput = document.getElementById('user-input');
 const sendButton = document.getElementById('send-button');
