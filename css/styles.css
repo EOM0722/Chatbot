@@ -76,15 +76,15 @@ h1 {
 
 #character {
     position: absolute;
-    bottom: 50px;
+    bottom: 100px;
     left: -30px;
     width: 100px;
     height: 100px;
 }
 
 #character-image {
-    width: 150%;
-    height: 150%;
+    width: 200%;
+    height: 200%;
     object-fit: contain;
 }
 
