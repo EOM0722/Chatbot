@@ -94,6 +94,7 @@ h1 {
     border-radius: 18px;
     max-width: 80%;
     word-wrap: break-word;
+    font-size: 16px; /* 메시지 폰트 크기 */
 }
 
 .user-message {
@@ -125,7 +126,7 @@ h1 {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 16px; /* 입력창 폰트 크기 */
 }
 
 #send-button, #clear-history {
@@ -146,7 +147,7 @@ h1 {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 20px;
+        font-size: 30px; /* 중간 크기의 화면에서 제목 폰트 크기 */
     }
 
     #chat-area {
@@ -166,7 +167,15 @@ h1 {
     }
 
     .message {
-        font-size: 14px;
+        font-size: 14px; /* 메시지 폰트 크기 */
+    }
+
+    #user-input {
+        font-size: 14px; /* 입력창 폰트 크기 */
+    }
+
+    #send-button, #clear-history {
+        font-size: 14px; /* 버튼 폰트 크기 */
     }
 }
 
@@ -176,7 +185,7 @@ h1 {
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 24px; /* 작은 화면에서 제목 폰트 크기 */
         margin-bottom: 10px;
     }
 
@@ -198,12 +207,12 @@ h1 {
     }
 
     .message {
-        font-size: 12px;
+        font-size: 12px; /* 작은 화면에서 메시지 폰트 크기 */
         max-width: 85%;
     }
 
     #user-input, #send-button, #clear-history {
-        font-size: 14px;
+        font-size: 14px; /* 입력창과 버튼의 폰트 크기 */
     }
 
     #send-button, #clear-history {
