@@ -35,6 +35,12 @@ function setCharacterImage(isAnimated) {
     characterImage.src = isAnimated ? 'character-image.gif' : 'character-image.png';
 }
 
+function closeKeyboard() {
+    if (document.activeElement instanceof HTMLInputElement) {
+        document.activeElement.blur();
+    }
+}
+
 async function sendMessage() {
     const message = userInput.value.trim();
     if (message) {
@@ -42,6 +48,10 @@ async function sendMessage() {
         addMessageToUI('user', message);
         saveChatHistory('user', message);
         userInput.value = '';
+        
+        // 키보드 닫기
+        closeKeyboard();
+        
         try {
             const chatHistory = JSON.parse(localStorage.getItem('chatHistory') || '[]');
             const response = await fetch(`${serverUrl}/chat`, {
@@ -95,11 +105,14 @@ async function clearHistory() {
 }
 
 sendButton.addEventListener('click', sendMessage);
+
 userInput.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
+        e.preventDefault(); // 폼 제출 방지
         sendMessage();
     }
 });
+
 clearHistoryButton.addEventListener('click', clearHistory);
 
 userInput.addEventListener('input', function() {
