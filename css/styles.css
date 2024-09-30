@@ -168,7 +168,7 @@ h1 {
         left: 15px;
     }
     .message {
-        font-size: 14px;
+        font-size: 30px;
     }
     #user-input, #send-button, #clear-history {
         font-size: 14px;
@@ -200,7 +200,7 @@ h1 {
         left: 10px;
     }
     .message {
-        font-size: 12px;
+        font-size: 30px;
         max-width: 85%;
     }
     #user-input, #send-button, #clear-history {
