@@ -1,4 +1,4 @@
-const serverUrl = 'https://aiohatbot.ngrok.app';
+const serverUrl = 'https://oralcancer.ngrok.app';
 const chatbox = document.getElementById('chatbox');
 const userInput = document.getElementById('user-input');
 const sendButton = document.getElementById('send-button');
